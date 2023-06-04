@@ -20,7 +20,7 @@ function about($contenido){
     echo(imprimirPagina($aboutContenido,$homeUrl,$titulo,$about,$grupos,$javascript));
 }
 function grupos(){
-    $javascript ='<script type="text/javascript" src="contenido\oin2022.js"></script>';
+    $javascript ='<script type="text/javascript" src="scipt.js"></script>';
     $titulo="Grupos";
     $about="about";
     $grupos="grupos";
