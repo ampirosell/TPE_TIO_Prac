@@ -1,0 +1,33 @@
+body {
+    box-sizing: border-box;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table,th,td {
+    border: 1px solid black;
+}
+
+th,td {
+    padding: 5px;
+}
+
+thead {
+    background-color: coral;
+}
+
+tbody {
+    background-color: burlywood;
+}
+
+#mensaje {
+    font-weight: 700;
+}
+
+.title {
+    font-size: 35px;
+}
