@@ -10,20 +10,18 @@ function iniciarPagina() {
         let botonEnviar = document.querySelector("#enviarDatos");
         botonEnviar.addEventListener("click", agregar);
         cargarApi();
-        console.log(grupos);
 
 
     function reiniciarTabla() {
         cuerpoTabla.innerHTML = "";
+
     }
 
     async function cargarApi() {
         try {
             let res = await fetch(url)
             let json = await res.json();
-            console.log(json);
             grupos= json;
-            console.log(grupos);
             actualizarTabla(grupos);
         }
         catch (error) {
