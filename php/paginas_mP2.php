@@ -1,5 +1,5 @@
 <?php
-require_once('contenido\mostrarPag2.php');
+require_once('php/mostrarPag2.php');
 
 function inicio($contenido){
     $javascript ='<script></script>';
@@ -20,7 +20,6 @@ function about($contenido){
     echo(imprimirPagina($aboutContenido,$homeUrl,$titulo,$about,$grupos,$javascript));
 }
 function grupos(){
-    $javascript ='<script type="text/javascript" src="scipt.js"></script>';
     $titulo="Grupos";
     $about="about";
     $grupos="grupos";
@@ -49,6 +48,6 @@ function grupos(){
         <tbody id="cuerpoTabla">
         </tbody>
     </table>';
-    echo(imprimirPagina($gruposContenido,$homeUrl,$titulo,$about,$grupos,$javascript));
+    echo(imprimirPagina($gruposContenido,$homeUrl,$titulo,$about,$grupos));
 
 }
