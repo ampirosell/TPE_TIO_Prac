@@ -7,9 +7,9 @@ function iniciarPagina() {
     let grupos = [];
 
 
-        let botonEnviar = document.querySelector("#enviarDatos");
-        botonEnviar.addEventListener("click", agregar);
-        cargarApi();
+    let botonEnviar = document.querySelector("#enviarDatos");
+    botonEnviar.addEventListener("click", agregar);
+    cargarApi();
 
 
     function reiniciarTabla() {
@@ -17,6 +17,7 @@ function iniciarPagina() {
 
     }
 
+
     async function cargarApi() {
         try {
             let res = await fetch(url)
@@ -30,21 +31,6 @@ function iniciarPagina() {
     }
 
 
-    async function cargarApi() {
-        try {
-            let res = await fetch(url)
-            let json = await res.json();
-            console.log(json);
-            grupos= json;
-            console.log(grupos);
-            actualizarTabla(grupos);
-        }
-        catch (error) {
-            console.log(error);
-        }
-    }
-
-    
     function actualizarTabla(arreglo) {
         reiniciarTabla();
         for (let i = 0; i < arreglo.length; i++) {
@@ -78,8 +64,6 @@ function iniciarPagina() {
                 "headers": { "Content-type": "application/json" },
                 "body": JSON.stringify(datos)
             })
-            let json = await res.json();
-            console.log(json);
         }
         catch (error) {
             console.log(error);
@@ -87,11 +71,4 @@ function iniciarPagina() {
 
         cargarApi();
     }
-    
-
-
-
-
-
-
 }
