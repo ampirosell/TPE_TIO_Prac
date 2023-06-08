@@ -7,7 +7,7 @@ function imprimirHeader($titulo, $home,$about,$grupos){
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>{$titulo}</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' href='style.css' type='text/css'>
+        <link rel='stylesheet' href='../estilos.css' type='text/css'>
         <script type='text/javascript' src='script.js'></script>
     </head>
     <body>
