@@ -45,6 +45,8 @@
             echo '<p>' . $compañero['descripcion'] . '</p>';
             echo '</div>';
         }
+
+        return $tarjeta;
         ?>
     </div>
 </body>
