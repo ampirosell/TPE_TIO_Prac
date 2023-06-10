@@ -11,29 +11,29 @@
         // Información de los compañeros
         $companeros = array(
             array(
-                'nombre' => 'Compañero 1',
+                'nombre' => 'Bugarin Joana',
                 'descripcion' => 'Breve descripción del compañero 1.',
-                'foto' => 'ruta/companero1.jpg'
+                'foto' => 'app/assets/WhatsApp Image 2023-06-10 at 18.13.08.jpg'
             ),
             array(
-                'nombre' => 'Compañero 2',
+                'nombre' => 'Hernando Fermin',
                 'descripcion' => 'Breve descripción del compañero 2.',
-                'foto' => 'ruta/companero2.jpg'
+                'foto' => 'app/assets/WhatsApp Image 2023-06-10 at 18.07.30.jpg'
             ),
             array(
-                'nombre' => 'Compañero 3',
+                'nombre' => 'Piliavsky Pablo',
                 'descripcion' => 'Breve descripción del compañero 3.',
-                'foto' => 'ruta/companero3.jpg'
+                'foto' => 'app/assets/WhatsApp Image 2023-06-10 at 18.13.08 (1).jpg'
             ),
             array(
-                'nombre' => 'Compañero 4',
+                'nombre' => 'Pozzobon Vanina',
                 'descripcion' => 'Breve descripción del compañero 4.',
-                'foto' => 'ruta/companero4.jpg'
+                'foto' => 'app/assets/WhatsApp Image 2023-06-10 at 18.18.08.jpg'
             ),
             array(
-                'nombre' => 'Compañero 5',
+                'nombre' => 'Rosell Amparo',
                 'descripcion' => 'Breve descripción del compañero 5.',
-                'foto' => 'ruta/companero5.jpg'
+                'foto' => 'app/assets/WhatsApp Image 2023-06-10 at 18.13.59.jpg'
             )
         );
 

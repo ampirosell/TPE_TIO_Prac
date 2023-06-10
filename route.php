@@ -1,34 +1,36 @@
 <?php
 
-define("BASE_URL", 'http://' . $_SERVER['SERVER_NAME'] . dirname($_SERVER['PHP_SELF']));
+define('BASE_URL', '//' . $_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] . dirname($_SERVER['PHP_SELF']) . '/');
 
 
-require_once 'php/mostrarPag2.php';
-require_once 'php/paginas_mP2.php';
+require_once ('php/controller.php');
 
 
 
-if (!empty($_GET['action'])){
+if (!empty($_GET['action'])) {
     $action = $_GET['action'];
-} else{$action = 'home';}
-    
+} else {
+    $action = 'home';
+}
+
 
 $params = explode("/", $action);
 
-    switch ($params[0]) {
-        case 'home':
-          inicio($params[0]);
+switch ($params[0]) {
+    case 'home':
+        $controller = new mostrarPaginas;
+        $controller->home();
         break;
-        case 'about':
-            echo ("about");
+    case 'about':
+        $controller = new mostrarPaginas;
+        $controller->about();
         break;
-        case 'grupo':
-            grupos();
+    case 'grupos':
+        $controller = new mostrarPaginas;
+        $controller->grupos();
         break;
-        default:
-            echo('No existe la pagina');
+    default:
+        echo ('No existe la pagina');
         break;
-
-        
-    }
+}
 ?>
