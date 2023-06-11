@@ -1,6 +1,6 @@
 <?php
-require_once('php/mostrarPag2.php');
-require_once('imprimirAbout.php');
+require_once('app/php/mostrarPag2.php');
+require_once('app/util/imprimirAbout.php');
 class mostrarPaginas{
     private $about;
 
@@ -10,7 +10,7 @@ class mostrarPaginas{
 
     public function home(){
         $titulo="Inicio";
-        $homeContenido='Bienvenidos';
+        $homeContenido='<h3>Bienvenidos</h3>';
         echo(imprimirPagina($homeContenido,$titulo));
     }
     public function about(){
